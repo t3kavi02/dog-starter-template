@@ -1,0 +1,14 @@
+### Dog API Test Collection
+
+@baseUrl = http://localhost:5000
+@contentType = application/json
+
+### Health Check
+GET {{baseUrl}}/api/health
+
+### Get Random Dog Image
+GET {{baseUrl}}/api/dogs/random
+
+### Get Random Dog Image (Alternative format)
+GET {{baseUrl}}/api/dogs/random
+Content-Type: {{contentType}}
